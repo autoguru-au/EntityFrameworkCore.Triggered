@@ -17,6 +17,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <PackageId>AutoGuru.$(MSBuildProjectName)</PackageId>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
