@@ -4,7 +4,7 @@ Triggers for EF Core. Respond to changes in your DbContext before and after they
 This is the [AutoGuru](https://github.com/autoguru-au)-maintained fork, targeting .NET 9 / EF Core 9. Published as `AutoGuru.*` NuGet packages.
 
 [![NuGet version (AutoGuru.EntityFrameworkCore.Triggered)](https://img.shields.io/nuget/v/AutoGuru.EntityFrameworkCore.Triggered.svg?style=flat-square)](https://www.nuget.org/packages/AutoGuru.EntityFrameworkCore.Triggered/)
-[![Build status](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/workflows/.NET%20Core/badge.svg)](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/actions?query=workflow%3A%22.NET+Core%22)
+[![Build status](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/workflows/Build/badge.svg)](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/actions?query=workflow%3ABuild)
 
 ## NuGet packages
 - AutoGuru.EntityFrameworkCore.Triggered [![NuGet version](https://img.shields.io/nuget/v/AutoGuru.EntityFrameworkCore.Triggered.svg?style=flat-square)](https://www.nuget.org/packages/AutoGuru.EntityFrameworkCore.Triggered/) [![NuGet](https://img.shields.io/nuget/dt/AutoGuru.EntityFrameworkCore.Triggered.svg?style=flat-square)](https://www.nuget.org/packages/AutoGuru.EntityFrameworkCore.Triggered/)
