@@ -33,7 +33,7 @@ dotnet build EntityFrameworkCore.Triggered.Samples.slnf
 The repo supports 3 major versions via `$(EFCoreTriggeredVersion)` in `Directory.Build.props`:
 - **V1**: EF Core 3.1, `netstandard2.0`, config `ReleaseV1`/`DebugV1`
 - **V2**: EF Core 5.0, `netstandard2.1`, config `ReleaseV2`/`DebugV2`
-- **V3** (current branch): EF Core 6.0+, `net6.0`, config `Release`/`Debug`
+- **V3**: EF Core 6.0+, `net6.0`, config `Release`/`Debug`
 
 Source files use `#if` directives with `EFCORETRIGGERED_V1`, `EFCORETRIGGERED_V2`, `EFCORETRIGGERED_V3` for version-specific code.
 

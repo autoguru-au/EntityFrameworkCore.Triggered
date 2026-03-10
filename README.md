@@ -17,7 +17,7 @@ This is the [AutoGuru](https://github.com/autoguru-au)-maintained fork, targetin
 1. Install the package from [NuGet](https://www.nuget.org/packages/AutoGuru.EntityFrameworkCore.Triggered)
 2. Write triggers by implementing `IBeforeSaveTrigger<TEntity>` and `IAfterSaveTrigger<TEntity>`
 3. Register your triggers with your DbContext
-4. View our [samples](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/tree/master/samples)
+4. View our [samples](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/tree/main/samples)
 5. Check out our [wiki](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/wiki) for tips and tricks on getting started and being successful.
 
 > This fork targets .NET 9 / EF Core 9. Triggers are invoked automatically via EF Core's `ISaveChangesInterceptor`.
@@ -211,7 +211,7 @@ catch {
 In this example we were not able to inherit from TriggeredDbContext since we want to manually control the TriggerSession
 
 ### Custom trigger types
-By default we offer 3 trigger types: `IBeforeSaveTrigger`, `IAfterSaveTrigger` and `IAfterSaveFailedTrigger`. These will cover most cases. In addition we offer `IRaiseBeforeCommitTrigger` and `IRaiseAfterCommitTrigger` as an extension to further enhance your control of when triggers should run. We also offer support for custom triggers. Let's say we want to react to specific events happening in your context. We can do so by creating a new interface `IThisThingJustHappenedTrigger` and implementing an extension method for `ITriggerSession` to invoke triggers of that type. Please take a look at how [Transactional triggers](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/tree/master/src/EntityFrameworkCore.Triggered.Transactions) are implemented as an example.
+By default we offer 3 trigger types: `IBeforeSaveTrigger`, `IAfterSaveTrigger` and `IAfterSaveFailedTrigger`. These will cover most cases. In addition we offer `IRaiseBeforeCommitTrigger` and `IRaiseAfterCommitTrigger` as an extension to further enhance your control of when triggers should run. We also offer support for custom triggers. Let's say we want to react to specific events happening in your context. We can do so by creating a new interface `IThisThingJustHappenedTrigger` and implementing an extension method for `ITriggerSession` to invoke triggers of that type. Please take a look at how [Transactional triggers](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/tree/main/src/EntityFrameworkCore.Triggered.Transactions) are implemented as an example.
 
 ### Async triggers
 Async triggers are fully supported, though you should be aware that if they are fired as a result of a call to the synchronous `SaveChanges` on your DbContext, the triggers will be invoked and the results waited for by blocking the caller thread as discussed [here](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/issues/127). This is known as the sync-over-async problem which can result in deadlocks. It's recommended to use `SaveChangesAsync` to avoid the potential for deadlocks, which is also best practice anyway for an operation that involves network/file access as is the case with an EF Core read/write to the database.
