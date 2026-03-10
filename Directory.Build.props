@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <LangVersion>9.0</LangVersion>
+    <LangVersion>default</LangVersion>
     <Nullable>enable</Nullable>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <Configurations>Debug;Release</Configurations>
@@ -18,9 +18,8 @@
   </PropertyGroup>
  
   <PropertyGroup>
-    <EFCoreTriggeredVersion>3</EFCoreTriggeredVersion>
-    <EFCorePackageVersion>6.0.0</EFCorePackageVersion>
-    <MicrosoftExtensionsVersion>6.0.0</MicrosoftExtensionsVersion>
+    <EFCorePackageVersion>9.0.3</EFCorePackageVersion>
+    <MicrosoftExtensionsVersion>9.0.3</MicrosoftExtensionsVersion>
   </PropertyGroup>
 
 </Project>

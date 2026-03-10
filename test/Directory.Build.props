@@ -1,0 +1,8 @@
+<Project>
+  <Import Project="..\Directory.Build.props" />
+
+  <PropertyGroup>
+    <!-- Suppress xUnit analyzer warnings that conflict with TreatWarningsAsErrors -->
+    <NoWarn>$(NoWarn);xUnit1031;xUnit2013;xUnit2029</NoWarn>
+  </PropertyGroup>
+</Project>

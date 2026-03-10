@@ -1,6 +1,7 @@
 <Project>
+  <Import Project="..\Directory.Build.props" />
+
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 </Project>
