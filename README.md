@@ -1,7 +1,7 @@
 # EntityFrameworkCore.Triggered
 Triggers for EF Core. Respond to changes in your DbContext before and after they are committed to the database.
 
-This is the [AutoGuru](https://github.com/autoguru-au)-maintained fork, targeting .NET 9 / EF Core 9. Published as `AutoGuru.*` NuGet packages.
+This is the [AutoGuru](https://github.com/autoguru-au)-maintained fork, targeting .NET 10 / EF Core 10. Published as `AutoGuru.*` NuGet packages.
 
 [![NuGet version (AutoGuru.EntityFrameworkCore.Triggered)](https://img.shields.io/nuget/v/AutoGuru.EntityFrameworkCore.Triggered.svg?style=flat-square)](https://www.nuget.org/packages/AutoGuru.EntityFrameworkCore.Triggered/)
 [![Build status](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/workflows/Build/badge.svg)](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/actions?query=workflow%3ABuild)
@@ -20,7 +20,7 @@ This is the [AutoGuru](https://github.com/autoguru-au)-maintained fork, targetin
 4. View our [samples](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/tree/main/samples)
 5. Check out our [wiki](https://github.com/autoguru-au/EntityFrameworkCore.Triggered/wiki) for tips and tricks on getting started and being successful.
 
-> This fork targets .NET 9 / EF Core 9. Triggers are invoked automatically via EF Core's `ISaveChangesInterceptor`.
+> This fork targets .NET 10 / EF Core 10. Triggers are invoked automatically via EF Core's `ISaveChangesInterceptor`.
 
 ### Example
 ```csharp
