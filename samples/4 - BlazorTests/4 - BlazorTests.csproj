@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EntityFrameworkCore.Triggered.Extensions" Version="$(EFCoreTriggeredPackageVersion)" />
+    <ProjectReference Include="../../src/EntityFrameworkCore.Triggered.Extensions/EntityFrameworkCore.Triggered.Extensions.csproj" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EFCorePackageVersion)" />
   </ItemGroup>
 
