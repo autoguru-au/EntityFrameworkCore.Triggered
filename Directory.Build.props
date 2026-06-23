@@ -18,8 +18,8 @@
   </PropertyGroup>
  
   <PropertyGroup>
-    <EFCorePackageVersion>9.0.3</EFCorePackageVersion>
-    <MicrosoftExtensionsVersion>9.0.3</MicrosoftExtensionsVersion>
+    <EFCorePackageVersion>10.0.9</EFCorePackageVersion>
+    <MicrosoftExtensionsVersion>10.0.9</MicrosoftExtensionsVersion>
   </PropertyGroup>
 
 </Project>
